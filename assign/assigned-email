@@ -1,148 +1,130 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <style>
-        body {
-            font-family: 'Almarai', sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .email-container {
-            max-width: 600px;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: auto;
-        }
-        .header {
-            background: #fbb041;
-            color: #ffffff;
-            padding: 15px;
-            text-align: center;
-            font-size: 20px;
-            border-radius: 10px 10px 0 0;
-            font-weight: bold;
-        }
-        .content {
-            padding: 20px;
-            color: #333;
-            font-size: 16px;
-            font-family: 'Almarai', sans-serif;
-        }
-        .content p {
-            margin: 10px 0;
-            font-family: 'Almarai', sans-serif;
-        }
-        .section {
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
-        }
-        .section-title {
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
-            font-size: 18px;
-        }
-        .divider {
-            height: 1px;
-            background-color: #ddd;
-            margin: 15px 0;
-        }
-        .cta-buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Pay Plan Request</title>
+    <style type="text/css">
+        /* Client-specific styles */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; }
+
+        /* Reset styles */
+        body { margin: 0; padding: 0; }
+        img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+        table { border-collapse: collapse !important; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+        
+        /* Button styles */
+        .cta-buttons { text-align: center; margin-top: 20px; }
         .cta-buttons a {
-            display: inline-block;
-            padding: 12px 20px;
-            margin: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
+            display: inline-block; 
+            padding: 12px 20px; 
+            margin: 5px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 5px; 
             color: white;
-            font-family: 'Almarai', sans-serif;
         }
-        .approve {
-            background: #28a745;
-        }
-        .reject {
-            background: #dc3545;
-        }
-        .footer {
-            text-align: center;
-            font-size: 14px;
-            color: #777;
-            margin-top: 20px;
-            font-family: 'Almarai', sans-serif;
-        }
+        .approve { background: #28a745; }
+        .reject { background: #dc3545; }
     </style>
 </head>
-<body>
-    <div class="email-container">
-        <div class="header">New Pay Plan Request</div>
-        <div class="content">
-            <p>Hello,</p>
-            <p>A new pay plan request has been submitted that requires your approval.</p>
-            
-            <div class="divider"></div>
-            
-            <div class="section">
-                <div class="section-title">Requester's Contact Information</div>
-                <p><strong>Requester's Name:</strong> {Requester\'s Name (First):1.3} {Requester\'s Name (Last):1.6}</p>
-                <p><strong>Requester's Email Address:</strong> {Requester\'s Email Address:2}</p>
-            </div>
-            
-            <div class="section">
-                <div class="section-title">Employee Information</div>
-                <p><strong>Employee Name:</strong> {Employee Name (First):39.3} {Employee Name (Last):39.6}</p>
-                <p><strong>Dealership:</strong> {Dealership:11}</p>
-                <p><strong>Department:</strong> {Department:16}</p>
-                <p><strong>Position Title:</strong> {Position Title:17}</p>
-                <p><strong>Date of Request:</strong> {Date of Request:18}</p>
-            </div>
-            
-            <div class="section">
-                <div class="section-title">Current Pay Plan Information</div>
-                <p><strong>Current Pay Plan:</strong> {Current Pay Plan:20}</p>
-                <p><strong>Base Salary / Hourly Rate:</strong> ${Base Salary / Hourly Rate:21}</p>
-                <p><strong>Commissions / Bonuses (if any):</strong> {Commissions / Bonuses (if any):22}</p>
-                <p><strong>Total Annual Compensation:</strong> ${Total Annual Compensation::23}</p>
-                <p><strong>Effective Date of Current Pay Plan:</strong> {Effective Date of Current Pay Plan:25}</p>
-            </div>
-            
-            <div class="section">
-                <div class="section-title">Proposed Pay Plan Information</div>
-                <p><strong>New Pay Plan:</strong> {New Pay Plan:40}</p>
-                <p><strong>Base Salary / Hourly Rate:</strong> ${Base Salary/Hourly Rate::28}</p>
-                <p><strong>Commissions / Bonuses (if any):</strong> {Commissions /Bonuses (if any):29}</p>
-                <p><strong>Projected Total Annual Compensation:</strong> ${Projected Total Annual Compensation::30}</p>
-                <p><strong>Effective Date of Proposed Pay Plan:</strong> {Effective Date of Proposed Pay Plan:31}</p>
-            </div>
-            
-            <div class="section">
-                <div class="section-title">Justification for Change</div>
-                <p>{Justification for Change:3}</p>
-            </div>
-            
-            <div class="section">
-                <div class="section-title">Growth Projections</div>
-                <p>{Growth Projections:15}</p>
-            </div>
-            
-            <p><a href="{workflow_entry_url}">Click here</a> to review all details.</p>
-            
-            <div class="cta-buttons">
-                <a class="approve" href="{workflow_approve_url}">Approve</a>
-                <a class="reject" href="{workflow_reject_url}">Reject</a>
-            </div>
-        </div>
-        <div class="footer">
-            <p>Thank you,<br>
-            <strong>Pay Plan Request System</strong></p>
-        </div>
-    </div>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Arial, sans-serif;">
+    <!-- Main table -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f4f4f4; padding: 20px;">
+        <tr>
+            <td align="center">
+                <!-- Email container -->
+                <table border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <!-- Header -->
+                    <tr>
+                        <td align="center" bgcolor="#fbb041" style="padding: 15px; color: #ffffff; font-size: 20px; font-weight: bold; border-radius: 10px 10px 0 0;">
+                            New Pay Plan Request
+                        </td>
+                    </tr>
+                    
+                    <!-- Content -->
+                    <tr>
+                        <td style="padding: 20px; color: #333333; font-size: 16px;">
+                            <p style="margin: 10px 0;">Hello,</p>
+                            <p style="margin: 10px 0;">A new pay plan request has been submitted that requires your approval.</p>
+                            
+                            <!-- Divider -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td height="1" bgcolor="#dddddd" style="font-size: 0; line-height: 0;">&nbsp;</td>
+                                </tr>
+                            </table>
+                            
+                            <!-- Requester's Information -->
+                            <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eeeeee;">
+                                <p style="font-weight: bold; margin-bottom: 10px; color: #333333; font-size: 18px;">Requester's Contact Information</p>
+                                <p style="margin: 10px 0;"><strong>Requester's Name:</strong> {Requester's Name (First):1.3} {Requester's Name (Last):1.6}</p>
+                                <p style="margin: 10px 0;"><strong>Requester's Email Address:</strong> {Requester's Email Address:2}</p>
+                            </div>
+                            
+                            <!-- Employee Information -->
+                            <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eeeeee;">
+                                <p style="font-weight: bold; margin-bottom: 10px; color: #333333; font-size: 18px;">Employee Information</p>
+                                <p style="margin: 10px 0;"><strong>Employee Name:</strong> {Employee Name (First):39.3} {Employee Name (Last):39.6}</p>
+                                <p style="margin: 10px 0;"><strong>Dealership:</strong> {Dealership:11}</p>
+                                <p style="margin: 10px 0;"><strong>Department:</strong> {Department:16}</p>
+                                <p style="margin: 10px 0;"><strong>Position Title:</strong> {Position Title:17}</p>
+                                <p style="margin: 10px 0;"><strong>Date of Request:</strong> {Date of Request:18}</p>
+                            </div>
+                            
+                            <!-- Current Pay Plan -->
+                            <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eeeeee;">
+                                <p style="font-weight: bold; margin-bottom: 10px; color: #333333; font-size: 18px;">Current Pay Plan Information</p>
+                                <p style="margin: 10px 0;"><strong>Current Pay Plan:</strong> {Current Pay Plan:20}</p>
+                                <p style="margin: 10px 0;"><strong>Base Salary / Hourly Rate:</strong> ${Base Salary / Hourly Rate:21}</p>
+                                <p style="margin: 10px 0;"><strong>Commissions / Bonuses (if any):</strong> {Commissions / Bonuses (if any):22}</p>
+                                <p style="margin: 10px 0;"><strong>Total Annual Compensation:</strong> ${Total Annual Compensation::23}</p>
+                                <p style="margin: 10px 0;"><strong>Effective Date of Current Pay Plan:</strong> {Effective Date of Current Pay Plan:25}</p>
+                            </div>
+                            
+                            <!-- Proposed Pay Plan -->
+                            <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eeeeee;">
+                                <p style="font-weight: bold; margin-bottom: 10px; color: #333333; font-size: 18px;">Proposed Pay Plan Information</p>
+                                <p style="margin: 10px 0;"><strong>New Pay Plan:</strong> {New Pay Plan:40}</p>
+                                <p style="margin: 10px 0;"><strong>Base Salary / Hourly Rate:</strong> ${Base Salary/Hourly Rate::28}</p>
+                                <p style="margin: 10px 0;"><strong>Commissions / Bonuses (if any):</strong> {Commissions /Bonuses (if any):29}</p>
+                                <p style="margin: 10px 0;"><strong>Projected Total Annual Compensation:</strong> ${Projected Total Annual Compensation::30}</p>
+                                <p style="margin: 10px 0;"><strong>Effective Date of Proposed Pay Plan:</strong> {Effective Date of Proposed Pay Plan:31}</p>
+                            </div>
+                            
+                            <!-- Justification -->
+                            <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eeeeee;">
+                                <p style="font-weight: bold; margin-bottom: 10px; color: #333333; font-size: 18px;">Justification for Change</p>
+                                <p style="margin: 10px 0;">{Justification for Change:3}</p>
+                            </div>
+                            
+                            <!-- Growth Projections -->
+                            <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eeeeee;">
+                                <p style="font-weight: bold; margin-bottom: 10px; color: #333333; font-size: 18px;">Growth Projections</p>
+                                <p style="margin: 10px 0;">{Growth Projections:15}</p>
+                            </div>
+                            
+                            <!-- CTA Buttons - Using the exact format provided -->
+                            <div class="cta-buttons" style="text-align: center; margin-top: 20px;">
+                                <a class="approve" href="{workflow_approve_url}" style="display: inline-block; padding: 12px 20px; margin: 5px; text-decoration: none; font-weight: bold; border-radius: 5px; color: white; background: #28a745;">Approve</a>
+                                <a class="reject" href="{workflow_reject_url}" style="display: inline-block; padding: 12px 20px; margin: 5px; text-decoration: none; font-weight: bold; border-radius: 5px; color: white; background: #dc3545;">Reject</a>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td align="center" style="padding: 20px; text-align: center; font-size: 14px; color: #777777;">
+                            Thank you,<br />
+                            <strong>Pay Plan Request System</strong>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
