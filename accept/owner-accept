@@ -75,10 +75,10 @@
         <div class="header">Pay Plan Request Approved</div>
         <div class="content">
             <p>Hello,</p>
-            <p>A pay plan request has been approved and is ready for implementation.</p>
+            <p>A pay plan request has been approved.</p>
             
             <div class="approval-status">
-                ✓ Approved by GM/Director on {Approval Date:45}
+                ✓ Approved by GM/Director
             </div>
             
             <div class="divider"></div>
