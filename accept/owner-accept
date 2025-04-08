@@ -51,32 +51,22 @@
             background-color: #ddd;
             margin: 15px 0;
         }
-        .cta-buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .cta-buttons a {
-            display: inline-block;
-            padding: 12px 20px;
-            margin: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            color: white;
-            font-family: 'Almarai', sans-serif;
-        }
-        .approve {
-            background: #28a745;
-        }
-        .reject {
-            background: #dc3545;
-        }
         .footer {
             text-align: center;
             font-size: 14px;
             color: #777;
             margin-top: 20px;
             font-family: 'Almarai', sans-serif;
+        }
+        .approval-status {
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 15px 0;
+            border: 1px solid #d6e9c6;
+            text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -85,7 +75,11 @@
         <div class="header">Pay Plan Request Approved</div>
         <div class="content">
             <p>Hello,</p>
-            <p>A new pay plan request has been approved by the GM/Director.</p>
+            <p>A pay plan request has been approved and is ready for implementation.</p>
+            
+            <div class="approval-status">
+                ✓ Approved by GM/Director on {Approval Date:45}
+            </div>
             
             <div class="divider"></div>
             
@@ -114,12 +108,12 @@
             </div>
             
             <div class="section">
-                <div class="section-title">Proposed Pay Plan Information</div>
+                <div class="section-title">Approved Pay Plan Information</div>
                 <p><strong>New Pay Plan:</strong> {New Pay Plan:40}</p>
                 <p><strong>Base Salary / Hourly Rate:</strong> ${Base Salary/Hourly Rate::28}</p>
                 <p><strong>Commissions / Bonuses (if any):</strong> {Commissions /Bonuses (if any):29}</p>
                 <p><strong>Projected Total Annual Compensation:</strong> ${Projected Total Annual Compensation::30}</p>
-                <p><strong>Effective Date of Proposed Pay Plan:</strong> {Effective Date of Proposed Pay Plan:31}</p>
+                <p><strong>Effective Date of New Pay Plan:</strong> {Effective Date of Proposed Pay Plan:31}</p>
             </div>
             
             <div class="section">
@@ -131,7 +125,6 @@
                 <div class="section-title">Growth Projections</div>
                 <p>{Growth Projections:15}</p>
             </div>
-           
         </div>
         <div class="footer">
             <p>Thank you,<br>
